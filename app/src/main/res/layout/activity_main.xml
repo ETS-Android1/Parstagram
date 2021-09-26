@@ -40,5 +40,11 @@
             android:text="SUBMIT"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnLogOut"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:text="LogOut" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

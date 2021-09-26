@@ -23,6 +23,7 @@ public class LoginActivity extends AppCompatActivity {
     private Button btnLogin;
     private Button btnSignUp;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,11 +41,10 @@ public class LoginActivity extends AppCompatActivity {
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i(TAG,"onClick signup button");
-                String username = etUsername.getText().toString();
-                String password = etPassword.getText().toString();
-                ParseUser user = new ParseUser();
-                user.signUpInBackground();
+                Log.i(TAG, "onClick SignUp button");
+                Toast.makeText(LoginActivity.this, "Signup Button clicked", Toast.LENGTH_SHORT).show();
+                Intent m = new Intent(LoginActivity.this, SignUpActivity.class);
+                startActivity(m);
             }
         });
 
@@ -81,11 +81,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
-    
-    private void goSignUpActivity() {
-       // Intent i = new Intent(this, )
-        finish();
-    }
+
 
     private void goMainActivity() {
         Intent i = new Intent(this, MainActivity.class);
