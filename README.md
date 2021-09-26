@@ -33,7 +33,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-A challenge I encountered while creating this applicationw was when I was changing activites and adding click listeners to my buttons. It turns out that I needed to also
+A challenge I encountered while creating this application was when I was changing activites and adding click listeners to my buttons. It turns out that I needed to also
 add these new activities into my AndroidManifest.xml! The changes worked eventually.
 
 ## Open-source libraries used
