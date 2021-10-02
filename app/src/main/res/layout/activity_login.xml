@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
     tools:context=".LoginActivity">
 
     <LinearLayout
@@ -20,11 +21,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/ivLogo_"
+            android:layout_width="391dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/iglogo">
+
+
+        </ImageView>
+
         <EditText
             android:id="@+id/etUsername"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_width="391dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginTop="16dp"
+            android:background="#d6d6d6"
             android:ems="10"
             android:hint="username"
             android:inputType="textPersonName"
@@ -34,10 +47,11 @@
 
         <EditText
             android:id="@+id/etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_width="387dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
             android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
+            android:background="#d6d6d6"
             android:ems="10"
             android:hint="password"
             android:inputType="textPassword"
@@ -47,13 +61,19 @@
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="LOGIN" />
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_button"
+            android:text="LOGIN"
+            android:textColor="#f5f0f0" />
 
         <Button
             android:id="@+id/btnSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SIGN UP" />
+            android:layout_margin="10dp"
+            android:background="#23b802"
+            android:text="SIGN UP"
+            android:textColor="#f5f0f0" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
