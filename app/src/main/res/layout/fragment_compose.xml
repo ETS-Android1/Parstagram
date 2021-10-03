@@ -7,14 +7,6 @@
     tools:context=".fragments.ComposeFragment">
 
 
-    <EditText
-        android:id="@+id/etDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Description..."
-        android:inputType="textPersonName" />
-
     <Button
         android:id="@+id/btnCaptureImage"
         android:layout_width="match_parent"
@@ -31,13 +23,14 @@
         android:id="@+id/btnSubmit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SUBMIT"
-         />
+        android:text="POST" />
 
-    <Button
-        android:id="@+id/btnLogOut"
-        android:layout_width="wrap_content"
-        android:layout_height="75dp"
-        android:text="LogOut" />
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Description..."
+        android:inputType="textPersonName" />
 
 </LinearLayout>
